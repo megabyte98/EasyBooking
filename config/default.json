@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://Manvendra:Manvendra123@cluster0-g0bay.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "hakuna matata"
+}
