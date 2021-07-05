@@ -4,9 +4,9 @@
   "description": "A FullStack MERN App to book seminar halls",
   "main": "server.js",
   "scripts": {
-    "build" : "cd client && npm run build",
-    "install-client" : "cd client && npm install",
-    "heroku-postbuild" : "npm run install-client && npm run build",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm run start --prefix client",
