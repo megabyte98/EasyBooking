@@ -16,6 +16,11 @@ app.use("/api/auth", require("./routes/auth"))
 app.use("/api/booking", require("./routes/booking"))
 app.use("/api/hall", require("./routes/hall"))
 
+
+if(process.env.NODE_ENV === "production"){
+  app.use(express.static("client/build"));
+}
+
 app.listen(PORT, (err) => {
   if (err) {
     console.error(err.message)
