@@ -1,5 +1,3 @@
-
-// require("dotenv").config({path : "./config.env"});
 const path = require("path")
 const express = require("express")
 const connectDB = require("./config/db")
@@ -19,17 +17,6 @@ app.use("/api/auth", require("./routes/auth"))
 app.use("/api/booking", require("./routes/booking"))
 app.use("/api/hall", require("./routes/hall"))
 
-
-// if(process.env.NODE_ENV === "production"){
-//   app.use(express.static(path.join(__dirname,"client/build")));
-//   app.get("*",(req,res) =>{
-//     res.sendFile(path.join(__dirname,'client','build','index.html'));
-//   })
-// }else{
-//   app.get("/",(req,res) =>{
-//     res.send("API Running");
-//   })
-// }
 
 app.listen(PORT, (err) => {
   if (err) {

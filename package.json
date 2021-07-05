@@ -4,7 +4,6 @@
   "description": "A FullStack MERN App to book seminar halls",
   "main": "server.js",
   "scripts": {
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm rum build --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm run start --prefix client",
